@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/_myreset.sass"],"names":[],"mappings":"AAAA;EACC;;;AACD;EACC;EACA;;;AACD;EACC;;;AACD;EACC;EACA","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/_myreset.sass","../sass/style.sass"],"names":[],"mappings":"AAAA;EACC;;;AACD;EACC;EACA;;;AACD;EACC;;;AACD;EACC;EACA;;;ACPD;EACC","file":"style.css"}
