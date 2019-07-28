@@ -2,3 +2,186 @@
 
 body
 	font-family: sans-serif
+	font-size: 17px
+
+.container
+	max-width: 1200px
+	margin: 0px auto
+
+.form-flights
+	padding: 15px
+	background-color: #cc0000
+	border-radius: 5px
+	box-shadow: 2px 11px 19px -8px rgba(0,0,0,0.3)
+	&__options
+		display: flex
+		justify-content: space-between
+		padding: 13px 0
+
+.direction-group label, .hotels label
+	color: #fff
+	margin: 0 10px 0 10px
+
+.form-flights__inputs input
+	width: 100%
+	border: none
+	outline: 0
+	padding: 15px 0
+
+.input-wrap
+	display: inline-block
+	padding: 0 0 0 40px
+	width: 18%
+	background-color: #fff
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		left: 5px
+		top: 50%
+		transform: translateY(-50%)
+
+.city
+	&:before
+		content: url(../img/location.png)
+	&:first-child
+		border-radius: 10px
+
+.my-datepicker
+	width: 15%
+	&:before
+		content: url(../img/calendar.png)
+
+.persons
+	padding: 15px 15px 15px 40px
+	border-top-right-radius: 10px
+	border-bottom-right-radius: 10px
+	&:before
+		content: url(../img/person.png)
+	&:after
+		position: absolute
+		content: url(../img/arrow-down.png)
+		right: 5px
+		top: 50%
+		transform: translateY(-50%)
+	&__input
+		display: inline-block
+	&__block
+		display: none
+		padding: 10px
+		position: absolute
+		width: 250px
+		height: 250px
+		padding: 15px
+		top: 120px
+		right: 185px
+		background-color: #fff
+		box-shadow: 2px 11px 19px -8px rgba(0,0,0,0.3)
+		&_active
+			display: inline-block
+
+.counter-block
+	display: flex
+	justify-content: space-between
+	padding: 10px 0
+
+.counter
+	width: 100px
+	display: flex
+	justify-content: space-between
+
+.btn-minus
+	display: inline-block
+	width: 25px
+	height: 25px
+	border-radius: 50%
+	background-color: grey
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		display: inline-block
+		height: 3px
+		width: 15px
+		background-color: #fff
+		right: 5px
+		top: 50%
+		transform: translateY(-50%)
+
+.btn-plus
+	display: inline-block
+	width: 25px
+	height: 25px
+	border-radius: 50%
+	background-color: #3399ff
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		display: inline-block
+		height: 3px
+		width: 15px
+		background-color: #fff
+		right: 5px
+		top: 50%
+		transform: translateY(-50%)
+	&:after
+		content: ''
+		position: absolute
+		display: inline-block
+		height: 3px
+		width: 15px
+		background-color: #fff
+		right: 5px
+		top: 50%
+		transform: translateY(-50%) rotate(90deg)
+
+.ui-selectmenu-button.ui-button
+	width: 100%
+	background-color: transparent
+	margin-top: 30px
+
+.search
+	display: inline-block
+	padding: 15px 0
+	width: 13%
+	text-align: center
+	background-color: #3399ff
+	border-radius: 7px
+	color: #fff
+	&:hover
+		text-decoration: none
+		color: #fff
+
+.datepicker td, .datepicker th
+	width: 50px
+	height: 40px
+th.datepicker-switch
+	text-transform: uppercase
+th.dow
+	color: #999
+.fa-chevron-left:before, .fa-chevron-right:before 
+	color: #cc0000
+.datepicker table tr td.active.active
+	background: transparent
+	color: #000
+	border: 1px solid #3399ff
+.datepicker table tr td.active.active:hover
+	background: transparent
+
+@media (max-width: 1100px)
+	.input-wrap
+		width: 49%
+		border-radius: 10px
+		padding: 0 40px
+		margin-bottom: 15px
+	.persons
+		padding: 15px 40px
+	.search
+		width: 49%
+
+@media (max-width: 600px)
+	.input-wrap, .search
+		width: 100%
+	.form-flights__options
+		flex-direction: column

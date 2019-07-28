@@ -6,25 +6,97 @@
 	<title>Document</title>
 
 	<!-- jquery -->
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 
-	<!-- datepicker -->
-	<link href="bower_components/air-datepicker/dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
-	<script src="bower_components/air-datepicker/dist/js/datepicker.min.js"></script>
+	<!-- jquery-ui -->
+	<link href="bower_components/jquery-ui/themes/base/jquery-ui.min.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+	<!-- bootstrap -->
+	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<!-- bootstrap-datepicker -->
+	<link href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-	<!-- normalize -->
-	<link rel="stylesheet" href="css/normalize.css">
 
 	<!-- custom styles -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<input type='text' class="datepicker-here" data-position="right top" />	
+	<div class="container">
+		<form action="" class="form-flights">
+			<div class="form-flights__options">
+				<div class="direction-group">
+					<input name="direction"  id="round" type="radio">
+					<label for="round">Round Trip</label>
+					<input name="direction"  id="one-way" type="radio">
+					<label for="one-way">one way</label>
+					<input  id="direct" type="checkbox">
+					<label for="direct">Direct flights only</label>
+				</div>
+				<div class="hotels">
+					<input type="checkbox" id="hotels">
+					<label for="hotels">Find hotels</label>
+				</div>
+			</div>
+			<div class="form-flights__inputs">
+				<span class="input-wrap city">
+					<input type='text' class="city__input"/>
+				</span>
+				<span class="input-wrap city"/>
+					<input type='text' class="city__input"/>
+				</span>
+				<span class="input-wrap my-datepicker">
+					<input type='text' class="my-datepicker__input" />
+				</span>
+				<span class="input-wrap my-datepicker">
+					<input type='text' class="my-datepicker__input"/>
+				</span>
+				<span class="input-wrap persons">
+					1, economy
+				</span>
+				<span class="persons__block">
+					<span class="counter-block">
+						<span>Adults</span>
+						<span class="counter">
+							<a href="#" class="btn-minus adults__btn-minus"></a>
+							<span class="adults__value">1</span>
+							<a href="#" class="btn-plus adults__btn-plus"></a>
+						</span>
+					</span>
+					<span class="counter-block">
+						<span>Children</span>
+						<span class="counter">
+							<a href="#" class="btn-minus children__btn-minus"></a>
+							<span class="children__value">0</span>
+							<a href="#" class="btn-plus children__btn-plus"></a>
+						</span>
+					</span>
+					<span class="counter-block">
+						<span>Infants</span>
+						<span class="counter">
+							<a href="#" class="btn-minus infants__btn-minus"></a>
+							<span class="infants__value">0</span>
+							<a href="#" class="btn-plus infants__btn-plus"></a>
+						</span>
+					</span>
+					<select name="persons" id="persons-select">
+						<option value="economy">Economy</option>
+						<option value="premium">Premium economy</option>
+						<option value="business">Business</option>
+						<option value="first">First</option>
+					</select>
+				</span>
+				<a href="#" class="search">SEARCH</a>
+			</div>
+		</form>
+	</div>
 
-	
-	<script src="js/script.js"></script>
+
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
